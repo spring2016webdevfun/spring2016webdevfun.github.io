@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>OpenCode Web Development Fundamentals</title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>LaGuardia Community College - OpenCode</h1>
+     <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reference.html">HTML Reference</a></li>
+                    <li><a href="css.html">Styling Reference</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="css_style">
+            <section class="css_color_text">
+                <h1>Color and Text with CSS</h1>
+                <article>
+                    <pre> 
+                        &lt;h1>Excepteur sint occaecat&lt;/h1>
+                        &lt;h2>Sint occaecat&lt;/h2>
+                        &lt;p>Lorem ipsum dolor sit amet, &lt;a href="#" target="_blank">consectetur adipisicing&lt;/a> elit, 
+                        sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                          anim id est laborum.&lt;/p>
+                        &lt;p class="center_text">Lorem ipsum dolor &lt;span>sit amet&lt;/span>, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                          anim id est laborum.&lt;/p>
+                    </pre>
+                    <div class="example">
+                    <h1>Excepteur sint occaecat</h1>
+                    <h2>Sint occaecat</h2>
+                        <p>Lorem ipsum dolor sit amet, <a href="" target="_blank">consectetur adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <p class="center_text">Lorem ipsum dolor <span>it amet</span>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                    <h3>CSS</h3>
+                    <pre>
+                        /* h1 text color is blue */
+                        h1 { color: blue; }
+                        
+                        h2 {
+                            text-align: center;
+                            border: 1px dashed green;
+                            background-color: orange;
+                            font-family: Arial, sans-serif;
+                        }
+
+                        
+                        /* snippet to center a block element */
+                         p.center_text { 
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 80%;
+                            margin-top: 2em;
+                            padding: 1em;
+                        }
+                        
+                        a {
+                            text-decoration: line-through;
+                        }
+                        
+                        p span {
+                            font-weight: bold;
+                            font-style: italic;
+                        }
+                    </pre>
+                <h4>Common CSS</h4>
+                <dl>
+                    <dt>color <span> h1 { color: blue; }</span></dt>
+                    <dd>Text color</dd>
+                    <dt>background-color <span> p { background-color: blue; }</span></dt>
+                    <dd>Background color</dd>
+                    <dt>font-family - <span> body { font-family: Arial, sans-serif; }</span></dt>
+                    <dd>Font family such as Arial, serif, sans-serif</dd>
+                    <dt>font-size - <span> p { font-size: 2em; } </span></dt>
+                    <dd>Size of the font in px, em, percentage or text values(xx-small, x-small, small, medium, large, x-large, xx-large).</dd>
+                    <dt>margin - <span> div { margin: 1em 1em 2em 2em; }</span></dt>
+                    <dd>Margin surrounding an element. Alternate: margin-left, margin-right, margin-top, margin-bottom. px, em, percentage</dd>
+                    <dt>padding - <span> div { padding: 2em; }</span></dt>
+                    <dt>padding-left, padding-right, padding-top, padding-bottom - <span> h3 { padding-bottom: 2em; }</span></dt>
+                    <dd>Blank space between the element and its border</dd>
+                    <dt>text-align - <span> div { text-align: center; }</span></dt>
+                    <dd>Text alignment: center, justify, left or right</dd>
+                    <dt>width - <span> p { width: 80%; }</span></dt>
+                    <dd>Width of a content element</dd>
+                    <dt>text-decoration - <span> a { text-decoration: none; }</span></dt>
+                    <dd>Determines if text is underlined. none on an anchor will mean that it is not underlined</dd>
+                    <dt>border - <span> h1 { border: 1px dashed blue; }</span></dt>
+                    <dt>border-bottom, border-top, border-left, border-right - <span> h2 { border-bottom: 1px solid black; }</span></dt>
+                    <dd>Shorthand to configure a border around an element. Width, border-style, and border color</dd>
+                    <dt>border-radius - <span> p { border-radius: 15px; }</span></dt>
+                    <dd>Configure rounded corners</dd>
+                    <dt>list-style-type - <span> ul { list-style-type: none; }</span></dt>
+                    <dd>Style of a list marker</dd>
+                    <dt>display - <span> li { display: inline;}</span></dt>
+                    <dt>float - <span> div { float: left;} </span></dt>
+                    <dd>Float an element on the left or the right side of the browser window or an element. Other elements flow around the element</dd>
+                    <dd>Clear the float by putting clear on the block element following - <span> main { clear: both; }</span></dd>
+                    
+                </dl>
+                <h4>Common CSS snippets</h4>
+                <dl>
+                    <dt>Center a block element</dt>
+                    <dd>
+                    <pre>
+                        p.center_text { 
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 80%;
+                        }
+                    </pre>
+                    </dd>
+                    <dt>2 Column page layout</dt>
+                    <dd>
+                        <pre>
+                            &lt;nav> &lt;/nav>
+                            &lt;div class="rightcol">
+                            &lt;main>&lt;/main>
+                            &lt;footer>&lt;/footer>
+                            &lt/div>
+                        </pre>
+                        <h5>CSS</h5>
+                        <pre>
+                            body { 
+                                width: 90%;
+                                margin-left: auto;
+                                margin-right: auto;
+                            }
+                            nav {
+                                float: left;
+                                width: 5em;
+                            }
+                            .rightcol {
+                                margin-left: 10em;
+                                background-color: #fff;
+                            }
+                        </pre>
+                    </dd>
+                    <dt>Header Text Image Replacement</dt>
+                    <dd>Replace a header with an image while making the text available to screen readers</dd>
+                    <dd>
+                        <pre>
+                            header {
+                                height: 2em;
+                                background-image: url('customimage.jpg');
+                                background-repeat: no-repeat;
+                            }
+                            
+                            header h1 {
+                                text-indent: 100%;
+                                white-space: nowrap;
+                                overflow: hidden;
+                            }
+                        </pre>
+                    </dd>
+                </dl>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p><a href="http://www.laguardia.edu/opencode/" target="_blank">LaGuardia Community College OpenCode Program</a></p>
+        </footer>
+    </body>
+</html>

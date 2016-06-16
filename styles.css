@@ -58,18 +58,72 @@ pre h1, pre h2, pre h3, pre h4, pre h5, pre h6 {
     padding: 0;
 }
 
-nav {
-    width: 25%;
+header h1 {
+    display: inline-block;
 }
 
-nav ul li {
+header nav, header nav ul {
+    display: inline-block;
+}
+header nav ul {
+    margin-left: 50%;
+}
+
+header nav ul li {
     display: inline-block;
     border: 1px solid black;
     text-align: center;
     padding: 10px;
 }
 
-nav {
-/*     text-align: center; */
-/*     padding-right: 50px; */
+div.example {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #df9c41;
 }
+
+.css_color_text h1 {
+    color: blue;
+}
+
+.css_color_text .example p.center_text { 
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 80%;
+                            margin-top: 2em;
+                            padding: 1em;
+                        }
+
+.css_color_text .example h1 {
+    color: blue;
+}
+
+.css_color_text .example h2 {
+    text-align: center;
+                            border: 1px dashed green;
+                            background-color: orange;
+                            font-family: Arial, sans-serif;
+    
+}
+
+.css_color_text .example p span {
+                            font-weight: bold;
+                            font-style: italic;
+                        }
+
+.css_color_text .example p a {
+                            text-decoration: line-through;
+                        }
+                        
+.css_color_text dl dt {
+    font-weight: bold;
+    margin-top: .25em;
+}
+
+.css_color_text dl span {
+    font-style: italic;
+    font-weight: normal;
+}
+
+
